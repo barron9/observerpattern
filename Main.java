@@ -14,7 +14,8 @@ public class Main {
         UserDataProcessor udp = UserDataProcessor.getInstance();
         System.out.println(udp.sayi);
         udp.registerObserver(ro);
-        udp.getdatafromRemote();
+        //udp.getdatafromRemote();
+       new loopThread(udp).start();
     }
 
 }
