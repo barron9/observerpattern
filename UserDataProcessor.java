@@ -9,14 +9,11 @@ public class UserDataProcessor implements DataObserver {
 
     public UserDataProcessor() {
         mObservers = new ArrayList<>();
-
         getdatafromRemote();
-
     }
 
     public void getdatafromRemote() {
         setUserData("Chike Mgbemena", 101);
-
     }
 
     public static UserDataProcessor getInstance() {
@@ -28,8 +25,9 @@ public class UserDataProcessor implements DataObserver {
 
     @Override
     public void registerObserver(RepositoryObserver repositoryObserver) {
-        if(!mObservers.contains(repositoryObserver)) {
+        if (!mObservers.contains(repositoryObserver)) {
             mObservers.add(repositoryObserver);
+            mObservers.size();
         }
     }
 
