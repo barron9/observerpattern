@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class UserDataProcessor implements DataObserver {
+public class UserDataProcessor implements UserDataObserver {
     public int sayi = 3;
     private static UserDataProcessor INSTANCE = null;
     private ArrayList<RepositoryObserver> mObservers;
